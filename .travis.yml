@@ -63,7 +63,6 @@ env:
 install:
   - git clone --depth=1 https://github.com/odoo/odoo.git ${HOME}/kojo-motors-project
   - export PATH=${HOME}/kojo-motors-project/travis:${PATH}
-  - travis_install_nightly
 
 script:
   - travis_run_tests
