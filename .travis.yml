@@ -42,8 +42,9 @@ install:
   - git clone --depth=1 https://github.com/odoo/odoo.git ${HOME}/kojo-motors-project
   - export PATH=${HOME}/kojo-motors-project/travis:${PATH}
 
-#script:
+script:
 #  - travis_run_tests
+  - echo "foo bar"
 
 after_success:
   - travis_after_tests_success
