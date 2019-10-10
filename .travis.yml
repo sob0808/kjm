@@ -43,7 +43,7 @@ install:
   - export PATH=${HOME}/kojo-motors-project/travis:${PATH}
   -
 
-script:
+#script:
 #  - travis_run_tests
 
 after_success:
