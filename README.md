@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/sob0808/kjm.svg?branch=master)]
+https://travis-ci.org/sob0808/kjm.svg?branch=master
 [![codecov](https://codecov.io/gh/OCA/${REPO_NAME}/branch/${BRANCH_NAME}/graph/badge.svg)](https://codecov.io/gh/OCA/${REPO_NAME})
 
-# ${REPO_NAME_VERBOSE}
+# Kojo
 
 ${REPO_DESCRIPTION}
 
