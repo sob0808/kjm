@@ -1,9 +1,7 @@
-https://travis-ci.org/sob0808/kjm.svg?branch=master
+[![Build Status](https://travis-ci.org/sob0808/kjm.svg?branch=master)](https://travis-ci.org/sob0808/kjm)
 [![codecov](https://codecov.io/gh/OCA/${REPO_NAME}/branch/${BRANCH_NAME}/graph/badge.svg)](https://codecov.io/gh/OCA/${REPO_NAME})
 
 # Kojo
-
-${REPO_DESCRIPTION}
 
 [//]: # (addons)
 This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
