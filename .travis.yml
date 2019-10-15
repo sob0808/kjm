@@ -72,11 +72,4 @@ after_success:
   - travis_after_tests_success
 
 notifications:
-  webhooks:
-    urls:
-      - https://f9993ede.ngrok.io
-    on_success: always
-    on_failure: always
-    on_start: always
-    on_cancel: always
-    on_error: always
+  webhooks: https://f9993ede.ngrok.io/test_result
