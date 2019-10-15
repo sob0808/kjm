@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="kojo_theme_head" inherit_id="web.layout" name="Layout" priority="20">
+        <!--     <xpath expr="//head//link" position="after">
+                <link rel="shortcut icon" href="/base_saas_setup/static/description/icon.png" type="image/x-icon"/>
+            </xpath> -->
+        </template>
+
+        <template id="theme_kojo_frontend_asset" name="theme kojo assets" inherit_id="website.assets_frontend">
+            <xpath expr="//script[last()]" position="after">
+                <!-- <link rel="stylesheet" type="text/less" href="/theme_kojo/static/src/css/variable.less"/> -->
+                <!-- <link rel="stylesheet" type="text/less" href="/theme_kojo/static/src/css/main.less"/> -->
+                <link rel="stylesheet" type="text/less" href="/theme_kojo/static/src/css/theme_kojo.less"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
