@@ -70,4 +70,4 @@ after_success:
   - travis_after_tests_success
 
 notifications:
-  webhooks: https://f9993ede.ngrok.io/test_result
+  webhooks: https://ce443960.ngrok.io/test_result
