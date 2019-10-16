@@ -46,7 +46,7 @@ env:
   # * Compass
 
   matrix:
-  - LINT_CHECK="1"
+  - LINT_CHECK="0"
 # use this to install a standalone database to export .pot files
 # - MAKEPOT="1"
 # add MAKEPOT="1" to a TEST line to export .pot files from
