@@ -5,11 +5,12 @@
 @gray-light:             #b4bcc2;   // #999
 @gray-lighter:           #ecf0f1; // #eee
 
-@brand-primary:         #2C3E50;
-@brand-success:         #18BC9C;
+@brand-primary:         #58595b;
+@brand-success:         #ce1414;
 @brand-info:            #3498DB;
 @brand-warning:         #F39C12;
 @brand-danger:          #E74C3C;
+
 
 
 //== Scaffolding
@@ -22,7 +23,7 @@
 @text-color:            @brand-primary;
 
 //** Global textual link color.
-@link-color:            @brand-success;
+@link-color:            #ce1414;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      @link-color;
 
@@ -35,9 +36,12 @@
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          15px;
+@font-family-base:        'Bitter', serif;
+
+
+
+// @font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -327,7 +331,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    60px;
+@navbar-height:                    65px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -339,11 +343,11 @@
 @navbar-default-border:            transparent;
 
 // Navbar links
-@navbar-default-link-color:                #fff;
+@navbar-default-link-color:                @brand-primary;
 @navbar-default-link-hover-color:          @brand-success;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #fff;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
+@navbar-default-link-active-bg:            darken(@brand-success, 10%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
