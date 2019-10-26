@@ -46,7 +46,7 @@ env:
   # * Compass
 
   matrix:
-  - LINT_CHECK="1"
+  - LINT_CHECK="0"
 # use this to install a standalone database to export .pot files
 # - MAKEPOT="1"
 # add MAKEPOT="1" to a TEST line to export .pot files from
@@ -57,8 +57,6 @@ env:
 # it's not necessary (it is only necessary if modules in your repository can't
 # be installed in the same database. And you get a huge speed penalty in your
 # tests)
-#  - TESTS="1.0" ODOO_REPO="odoo/odoo" UNIT_TEST="1"
-#  - TESTS="1.0" ODOO_REPO="OCA/OCB" UNIT_TEST="1"
 
 install:
   - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
@@ -70,3 +68,6 @@ script:
 
 after_success:
   - travis_after_tests_success
+
+notifications:
+  webhooks: https://ce443960.ngrok.io/test_result
