@@ -10,26 +10,26 @@
                         <div class="left-div">
                             <ul class="klist-inline pull-right tb-social-liner">
                                 <li>
-                                    <a href="javascript:void(0);" class="fa fa-facebook"></a>
+                                    <a t-attf-href="{{request.env.user.company_id.social_facebook}}" class="fa fa-facebook"></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="fa fa-twitter"></a>
+                                    <a t-attf-href="{{request.env.user.company_id.social_twitter}}" class="fa fa-twitter"></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="fa fa-linkedin"></a>
+                                    <a t-attf-href="{{request.env.user.company_id.social_linkedin}}" class="fa fa-linkedin"></a>
                                 </li>
                         
                                 <li>
-                                    <a href="javascript:void(0);" class="fa fa-instagram"></a>
+                                    <a t-attf-href="{{request.env.user.company_id.social_youtube}}" class="fa fa-youtube"></a>
                                 </li>
                             </ul>
 
                         </div>
                         <div class="right-div">
                             <ul class="list-unstyled pull-right tb-info-liner">
-                                <li><i class="fa fa-envelope text-primary"></i> info@yourcompany.com
+                                <li><i class="fa fa-envelope text-primary"></i> <t t-raw="request.env.user.company_id.email"/>
                                 </li>
-                                <li><i class="fa fa-phone text-primary"></i> +1 555 123 8069</li>
+                                <li><i class="fa fa-phone text-primary"></i><t t-raw="request.env.user.company_id.phone"/></li>
                             </ul>
                         </div>
                     </div>

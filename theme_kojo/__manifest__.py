@@ -2,12 +2,10 @@
 {
     'name': "Kojo's Motor Theme",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': """Kojo's Motor Theme""",
 
     'description': """
-        Long description of module's purpose
+        Kojo's Motor Theme
     """,
 
     'author': "SOB",
@@ -28,6 +26,7 @@
         "templates/layout.xml",
         'views/views.xml',
         'views/assets.xml',
+        'views/snippets.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
