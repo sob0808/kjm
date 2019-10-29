@@ -30,13 +30,13 @@ def get_result():
             directory_contents = os.listdir(os.getcwd())
             if CUST_ADDONS_NAME not in directory_contents:
                 os.system(
-                    f"git clone -b {BRANCH_TO_DEPLOY} --single-branch --depth=1 https://github.com/sob0808/kjm.git {CUST_ADDONS_NAME}"
+                    "git clone -b {} --single-branch --depth=1 https://github.com/sob0808/kjm.git {}".format(BRANCH_TO_DEPLOY, CUST_ADDONS_NAME)
                 )
             else:
                 try:
                     os.chdir(CUST_ADDONS_NAME)
-                    os.system(f"git pull origin master")
+                    os.system("git pull origin master")
                 except Exception:
                     print(f"Error occurred!")
-        return json.dumps({f"completed_successfully": True})
-    return json.dumps({f"completed_successfully": False})
+        return json.dumps({"completed_successfully": True})
+    return json.dumps({"completed_successfully": False})
